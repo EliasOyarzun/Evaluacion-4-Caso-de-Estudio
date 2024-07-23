@@ -1,0 +1,41 @@
+/* Servicios.css */
+.servicios-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .servicios-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .servicio-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .servicio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .servicio-item img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .servicio-item h2 {
+    margin: 1rem 0 0.5rem 0;
+    color: #333;
+  }
+  
+  .servicio-item p {
+    color: #666;
+  }

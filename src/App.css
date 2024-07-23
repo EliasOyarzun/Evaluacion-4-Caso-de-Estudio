@@ -1,0 +1,243 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+h1 {
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.servicios-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.servicios-lista {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.servicio-item {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.servicio-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicio-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.servicio-item h2 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.servicio-item p {
+  color: #666;
+}
+
+.cotizar-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.total-tiempo-real, .form-cotizar, .cotizar-historial {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 1rem;
+}
+
+.total-tiempo-real h3, .cotizar-historial h3 {
+  margin-bottom: 1rem;
+}
+
+.form-cotizar label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.form-cotizar input, .form-cotizar select, .form-cotizar textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 0.5rem;
+}
+
+.form-cotizar select {
+  width: auto;
+}
+
+.servicio-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.servicio-checkbox input[type="checkbox"] {
+  margin-left: 1rem;
+}
+
+.metros-cuadrados {
+  margin-top: 0.5rem;
+}
+
+.form-cotizar button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.form-cotizar button:hover {
+  background-color: #555;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.historial-item {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.historial-item:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .cotizar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .total-tiempo-real, .form-cotizar, .cotizar-historial {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.servicios-container, .form-cotizar {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.inicio-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.inicio-container h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.inicio-container p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.inicio-container .empresa-imagen {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-content div {
+  margin: 0.5rem 0;
+}
+
+.footer-links {
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+}
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
+.animate__animated.animate__fadeInDown {
+  animation-duration: 1s;
+}
+
+.animate__animated.animate__fadeInUp {
+  animation-duration: 1.5s;
+}
+
+.animate__animated.animate__fadeIn {
+  animation-duration: 2s;
+}
